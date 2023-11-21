@@ -190,7 +190,7 @@ background-color: white; /* Change background color on hover */
     }
     .filter{
       position: relative;
-      left:-1320px;
+      left:-1120px;
       top:20px;
     }
     .square-radio input[type="radio"] {
