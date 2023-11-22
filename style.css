@@ -64,7 +64,7 @@ background-color: white; /* Change background color on hover */
   .search-container {
     position: relative;
     width: 300px; /* Adjust width as needed */
-    left:40px;
+    left:200px;
     top:15px;
   }
   .search-input {
@@ -73,6 +73,13 @@ background-color: white; /* Change background color on hover */
     border: 1px solid #ccc; /* Border color */
     border-radius: 5px; /* Rounded corners */
     box-sizing: border-box; /* Make sure padding is included in width */
+  }
+  .c-head{
+    position:relative;
+    color:rgb(63, 75, 215);
+    top:10px;
+  font-size: 49px;
+    left:-90px;
   }
   .search-icon {
     position: absolute;
@@ -190,7 +197,7 @@ background-color: white; /* Change background color on hover */
     }
     .filter{
       position: relative;
-      left:-1420px;
+      left:-1400px;
       top:20px;
     }
     .square-radio input[type="radio"] {
@@ -249,15 +256,17 @@ background-color: white; /* Change background color on hover */
 .heading-res{
   position: relative;font-size: 30px;left:410px;top:51px;
 }
+/* NEW FROM HERE* 
 /* Example styles for responsiveness */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (min-width: 201px) and (max-width: 991px) {
   /* Hide search container on smaller screens */
   .top{
     display: none;
   }
   .c-head{
-    position: relative;
-    left:80px;;
+    position:relative;
+    left:100px;
   }
   .exp{
     display: none;
@@ -284,6 +293,7 @@ background-color: white; /* Change background color on hover */
   .heading-res{
     position: relative;
     left:20px;
+    top:-6px;
   }
   .card-container{
     display: flex; /* Display the cards in a row by default */
@@ -311,3 +321,183 @@ background-color: white; /* Change background color on hover */
   }
 }
 /* Default styles for the side slider */
+/* Styles for the sidebar and top navigation */
+.sidebar {
+  display: none;
+  /* Other sidebar styles */
+}
+
+.top1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Other top navigation styles */
+}
+.filterButton{
+  display:none;
+}
+.filterdiv{
+  display : none;
+}
+/* Default styles for top navigation (hidden by default) */
+/* Default styles for sidebar (hidden by default) */
+/* Default styles for sidebar (hidden by default) */
+
+.sidebar {
+  display: none;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f1f1f1;
+  
+  padding: 10px 30px; /* Padding values (top/bottom, left/right) */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+/* Sidebar content styles */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin-bottom: 22px; /* Adjust the space between list items */
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #000; /* Black text color */
+  display: block;
+  padding: 8px 0; /* Adjust the padding for each list item */
+}
+/* Show the sidebar when the 'show-sidebar' class is applied */
+.sidebar.show-sidebar {
+  display: block;
+
+}
+.topnavibar{
+display: none;
+top:-170px;
+padding:5px 7px;
+color:#110909;
+left:-40px;
+}
+.filterclose{
+  position: relative;
+  left:180px;
+}
+
+/* Media query for smaller screens */
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  .sidebar {
+    display: none; /* Hide the sidebar on larger screens */
+  }
+
+  .topnavibar {
+    display: block; /* Display button on smaller screens */
+    position: absolute;
+left:-240px;
+
+  }
+}
+.jn-1{
+  
+  position: relative;
+  margin-left: 20px;
+  padding: 7px 20px;
+  font-size: 16px;
+  height: 40px;
+  top: 14px;
+  left: -20px; /* Adjust this value as needed */
+  background-color: rgb(63, 75, 215);
+  color: azure;
+  border-radius: 6px;
+}
+.jn-1:hover{
+  background-color: aliceblue;
+color: black;
+}
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  .filter{
+    display: none;
+  }
+  .filterButton{
+    display: block;
+  background-color: rgb(63, 75, 215);
+  padding: 10px 30px;
+  color: #fff; /* Set the text color to white */
+  position: absolute;
+  left: -60px;
+  top: -20px;
+  }
+  .filterButton:hover{
+    background-color: #f1f1f1;
+    color: #000;
+  }
+  .filterdiv.sidebar{
+    display: block;
+  }
+}
+.end1{
+  display: none;
+}
+.footerdiv{
+  display: none;
+}
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  .footContent1{
+    display: block;
+    position: relative;
+    top:100px;
+    left:-220px;
+  }
+  .footContent2{
+    display: block;
+    position: relative;
+    top:200px;
+    left:-220px;
+  }
+  .footContent3{
+    display: block;
+    position: relative;
+    top:400px;
+    left:-220px;
+  }
+  .footContent4{
+    display: block;
+    position: relative;
+    top:500px;
+    left:-220px;
+  }
+  .popular{
+    display: none;
+  }
+  .popular2{
+  display: none;
+  }
+  .footerdiv{
+    display: block;
+   
+  }
+  .footerdiv .end1 {
+     /* Adjust positioning for smaller screens */
+     position:static;
+     top:800px;
+     left:-220px;
+  /* Ad margin for better spacing */
+  }
+
+  .footerdiv .icons {
+     /* Adjust positioning for smaller screens */
+     position:relative;
+     top:800px;
+     left:-175px; /* Center the icons */
+  }
+  .end1{
+    display: block;
+    position: relative;
+    top:700px;
+    left:-180px;
+  }
+}
